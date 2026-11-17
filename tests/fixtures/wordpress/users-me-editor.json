@@ -1,0 +1,97 @@
+{
+  "what": "GET /wp-json/wp/v2/users/me?context=edit with X-WP-Nonce and the session cookies, as an editor",
+  "recorded": "2026-11-10T07:15:16Z",
+  "run": "S-20261110T091455",
+  "wordpress": "7.1.4",
+  "status": 200,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "id": 2,
+    "username": "editor1",
+    "name": "editor1",
+    "first_name": "",
+    "last_name": "",
+    "email": "editor1@site.bench.test",
+    "url": "",
+    "description": "",
+    "link": "https://mainwp-bench-site.test/author/editor1/",
+    "locale": "en_US",
+    "nickname": "editor1",
+    "slug": "editor1",
+    "roles": [
+      "editor"
+    ],
+    "registered_date": "2026-11-10T07:15:16+00:00",
+    "capabilities": {
+      "moderate_comments": true,
+      "manage_categories": true,
+      "manage_links": true,
+      "upload_files": true,
+      "unfiltered_html": true,
+      "edit_posts": true,
+      "edit_others_posts": true,
+      "edit_published_posts": true,
+      "publish_posts": true,
+      "edit_pages": true,
+      "read": true,
+      "level_7": true,
+      "level_6": true,
+      "level_5": true,
+      "level_4": true,
+      "level_3": true,
+      "level_2": true,
+      "level_1": true,
+      "level_0": true,
+      "edit_others_pages": true,
+      "edit_published_pages": true,
+      "publish_pages": true,
+      "delete_pages": true,
+      "delete_others_pages": true,
+      "delete_published_pages": true,
+      "delete_posts": true,
+      "delete_others_posts": true,
+      "delete_published_posts": true,
+      "delete_private_posts": true,
+      "edit_private_posts": true,
+      "read_private_posts": true,
+      "delete_private_pages": true,
+      "edit_private_pages": true,
+      "read_private_pages": true,
+      "editor": true
+    },
+    "extra_capabilities": {
+      "editor": true
+    },
+    "avatar_urls": {
+      "24": "https://secure.gravatar.com/avatar/9cf803afff1fc63f73a5bf94b11edb1ca02d2e3ffb0ea11a51415e0133939db0?s=24&d=mm&r=g",
+      "48": "https://secure.gravatar.com/avatar/9cf803afff1fc63f73a5bf94b11edb1ca02d2e3ffb0ea11a51415e0133939db0?s=48&d=mm&r=g",
+      "96": "https://secure.gravatar.com/avatar/9cf803afff1fc63f73a5bf94b11edb1ca02d2e3ffb0ea11a51415e0133939db0?s=96&d=mm&r=g"
+    },
+    "meta": {
+      "persisted_preferences": []
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://mainwp-bench-site.test/wp-json/wp/v2/users/2",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://mainwp-bench-site.test/wp-json/wp/v2/users"
+        }
+      ]
+    }
+  }
+}

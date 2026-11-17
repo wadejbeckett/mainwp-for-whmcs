@@ -1,0 +1,12 @@
+{
+  "what": "POST sites/add for a site the dashboard already holds",
+  "recorded": "2026-11-09T15:55:14Z",
+  "run": "D-20261109T175513",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 0,
+    "error": "The site is already connected to your MainWP Dashboard",
+    "found_id": "1"
+  }
+}

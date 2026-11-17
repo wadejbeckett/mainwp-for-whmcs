@@ -1,0 +1,17 @@
+{
+  "recorded": "2026-11-10",
+  "run": "seventh run (module on the bench)",
+  "what": "GET /wp-login.php?action=logout with the session cookies, no nonce, and the header Accept: text/html,application/json: WordPress answers a client that accepts JSON with its \"Do you really want to log out?\" page as JSON (wp_die's JSON handler), the link inside the message",
+  "status": 403,
+  "headers": {
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "code": "wp_die",
+    "message": "You are attempting to log out of Bench client site</p><p>Do you really want to <a href=\"https://mainwp-bench-site.test/wp-login.php?action=logout&amp;_wpnonce=abcdef0123\">log out</a>?",
+    "data": {
+      "status": 403
+    },
+    "additional_errors": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "what": "GET sites/count with a key the dashboard does not know",
+  "recorded": "2026-11-09T15:55:17Z",
+  "run": "D-20261109T175513",
+  "mainwp": "6.4.1",
+  "status": 401,
+  "body": {
+    "code": "mainwp_rest_authentication_missing_parameter",
+    "message": "Invalid OAuth parameter.",
+    "data": {
+      "status": 401
+    }
+  }
+}

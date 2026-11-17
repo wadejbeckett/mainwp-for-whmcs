@@ -1,0 +1,31 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-addons",
+    "name": "mainwp",
+    "license": "AGPL-3.0-or-later",
+    "category": "addon",
+    "description": {
+        "name": "MainWP for WHMCS",
+        "tagline": "Sell care for WordPress sites under your own name and keep each site on MainWP in step with billing.",
+        "long": "Puts each paid care add-on's WordPress site on your own MainWP dashboard through MainWP's REST API. Clients connect their site from the client area; non-payment suspends care on the dashboard, payment resumes it and ending care removes the site. A daily check reports what is out of step. Works with the free MainWP Dashboard plugin. This add-on module holds the settings, the staff pages, the client's connect page and the daily check; it works with the MainWP for WHMCS provisioning module.",
+        "features": [
+            "Clients connect their own WordPress site from the client area",
+            "Suspends, resumes and removes sites on the dashboard as WHMCS bills",
+            "A daily check and an email digest of what needs attention",
+            "Clients read your care add-on's name; nothing the module shows them names MainWP",
+            "Dry-run mode to see what would happen before going live"
+        ]
+    },
+    "support": {
+        "homepage": "https://github.com/wadejbeckett/mainwp-for-whmcs",
+        "learn_more": "https://github.com/wadejbeckett/mainwp-for-whmcs#readme",
+        "support_url": "https://github.com/wadejbeckett/mainwp-for-whmcs/issues",
+        "docs_url": "https://github.com/wadejbeckett/mainwp-for-whmcs/blob/main/docs/reference.md"
+    },
+    "authors": [
+        {
+            "name": "Noiz",
+            "homepage": "https://github.com/wadejbeckett/mainwp-for-whmcs"
+        }
+    ]
+}

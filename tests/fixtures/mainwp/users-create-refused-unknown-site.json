@@ -1,0 +1,24 @@
+{
+  "what": "POST users/create, websites=99999 (no such site)",
+  "recorded": "2026-11-11T13:24:39Z",
+  "run": "C-20261111T152142",
+  "mainwp": "6.4.2.1",
+  "status": 400,
+  "body": {
+    "code": "rest_invalid_param",
+    "message": "Invalid parameter(s): websites",
+    "data": {
+      "status": 400,
+      "params": {
+        "websites": "Invalid site ID: 99999."
+      },
+      "details": {
+        "websites": {
+          "code": "invalid_site",
+          "message": "Invalid site ID: 99999.",
+          "data": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "what": "GET sites/{id} for a removed site",
+  "recorded": "2026-11-09T15:55:16Z",
+  "run": "D-20261109T175513",
+  "mainwp": "6.4.1",
+  "status": 404,
+  "body": {
+    "code": "mainwp_rest_invalid_site_id",
+    "message": "Invalid or not found ID.",
+    "data": {
+      "status": 404
+    }
+  }
+}

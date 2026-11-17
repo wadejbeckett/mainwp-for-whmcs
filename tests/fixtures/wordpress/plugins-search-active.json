@@ -1,0 +1,46 @@
+{
+  "what": "GET /wp-json/wp/v2/plugins?search=mainwp-child, MainWP Child active",
+  "recorded": "2026-11-10T07:15:13Z",
+  "run": "S-20261110T091455",
+  "wordpress": "7.1.4",
+  "status": 200,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": [
+    {
+      "plugin": "mainwp-child/mainwp-child",
+      "status": "active",
+      "name": "MainWP Child",
+      "plugin_uri": "https://mainwp.com/",
+      "author": "MainWP",
+      "author_uri": "https://mainwp.com",
+      "description": {
+        "raw": "Provides a secure connection between your MainWP Dashboard and your WordPress sites. MainWP allows you to manage WP sites from one central location. Plugin documentation and options can be found here https://docs.mainwp.com/.",
+        "rendered": "Provides a secure connection between your MainWP Dashboard and your WordPress sites. MainWP allows you to manage WP sites from one central location. Plugin documentation and options can be found here https://docs.mainwp.com/. <cite>By <a href=\"https://mainwp.com\">MainWP</a>.</cite>"
+      },
+      "version": "6.4.1",
+      "network_only": false,
+      "requires_wp": "6.2",
+      "requires_php": "7.4",
+      "textdomain": "mainwp-child",
+      "_links": {
+        "self": [
+          {
+            "href": "https://mainwp-bench-site.test/wp-json/wp/v2/plugins/mainwp-child/mainwp-child",
+            "targetHints": {
+              "allow": [
+                "GET",
+                "POST",
+                "PUT",
+                "PATCH",
+                "DELETE"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

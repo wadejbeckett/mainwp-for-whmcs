@@ -1,0 +1,18 @@
+{
+  "what": "POST /wp-json/wp/v2/plugins with slug=mainwp-child and status=active on a site with DISALLOW_FILE_MODS true",
+  "recorded": "2026-11-10T07:15:31Z",
+  "run": "S-20261110T091455",
+  "wordpress": "7.1.4",
+  "status": 403,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "code": "rest_cannot_install_plugin",
+    "message": "Sorry, you are not allowed to install plugins on this site.",
+    "data": {
+      "status": 403
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "what": "POST clients/add without a name",
+  "recorded": "2026-11-09T15:55:05Z",
+  "run": "D-20261109T175504",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 0,
+    "error": "Client name field is required! Please enter a Client name."
+  }
+}

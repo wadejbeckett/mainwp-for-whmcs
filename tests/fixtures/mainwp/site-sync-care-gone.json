@@ -1,0 +1,11 @@
+{
+  "what": "POST sites/{id}/sync, the care account deleted on the site",
+  "recorded": "2026-11-11T13:23:08Z",
+  "run": "C-20261111T152142",
+  "mainwp": "6.4.2.1",
+  "status": 200,
+  "body": {
+    "success": 0,
+    "data": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "what": "GET / on a site behind Apache Basic authentication (.htaccess, AuthName \"Bench protected site\"), no credentials",
+  "recorded": "2026-11-10T08:32:52Z",
+  "run": "SK-20261110T103156",
+  "wordpress": "7.1.4",
+  "status": 401,
+  "headers": {
+    "Content-Type": "text/html; charset=iso-8859-1",
+    "WWW-Authenticate": "Basic realm=\"Bench protected site\""
+  },
+  "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html><head>\n<title>401 Unauthorized</title>\n</head><body>\n<h1>Unauthorized</h1>\n<p>This server could not verify that you\nare authorized to access the document\nrequested.  Either you supplied the wrong\ncredentials (e.g., bad password), or your\nbrowser doesn't understand how to supply\nthe credentials required.</p>\n<hr>\n<address>Apache/2.4.69 (Debian) Server at mainwp-bench-site.test Port 443</address>\n</body></html>\n"
+}

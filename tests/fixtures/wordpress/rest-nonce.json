@@ -1,0 +1,11 @@
+{
+  "what": "GET /wp-admin/admin-ajax.php?action=rest-nonce while logged in (the nonce replaced)",
+  "recorded": "2026-11-10T07:15:08Z",
+  "run": "S-20261110T091455",
+  "wordpress": "7.1.4",
+  "status": 200,
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "body": "0123abcd45"
+}

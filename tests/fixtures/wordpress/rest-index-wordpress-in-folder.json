@@ -1,0 +1,26 @@
+{
+  "what": "Made by hand, not recorded on the bench: GET /blog/wp-json/ of a WordPress installed in the folder /blog, cut to the fields the module reads: its url and home are the folder's address",
+  "status": 200,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/blog/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "name": "Bench blog",
+    "url": "https://mainwp-bench-site.test/blog",
+    "home": "https://mainwp-bench-site.test/blog",
+    "namespaces": [
+      "oembed/1.0",
+      "wp/v2",
+      "wp-site-health/v1",
+      "wp-block-editor/v1"
+    ],
+    "authentication": {
+      "application-passwords": {
+        "endpoints": {
+          "authorization": "https://mainwp-bench-site.test/blog/wp-admin/authorize-application.php"
+        }
+      }
+    }
+  }
+}

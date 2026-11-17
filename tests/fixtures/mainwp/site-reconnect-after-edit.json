@@ -1,0 +1,16 @@
+{
+  "what": "POST sites/{id}/reconnect after sites/{id}/edit admin=owner",
+  "recorded": "2026-11-10T10:24:39Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "data": {
+      "id": "2",
+      "name": "Bench client site",
+      "url": "https://mainwp-bench-site.test/",
+      "client_id": "1"
+    }
+  }
+}

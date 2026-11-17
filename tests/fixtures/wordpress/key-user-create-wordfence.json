@@ -1,0 +1,18 @@
+{
+  "what": "POST /wp-json/wp/v2/users with the key (care account values as key-user-create), Wordfence active with application passwords on",
+  "recorded": "2026-11-10T08:32:28Z",
+  "run": "SK-20261110T103156",
+  "wordpress": "7.1.4",
+  "status": 400,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "code": "pass",
+    "message": "<strong>ERROR</strong>: The password provided is too weak. Please choose a stronger password and try again. A strong password will follow these guidelines: <ul class=\"wf-password-requirements\">\n\t\t\t\t\t<li>At least 12 characters</li>\n\t\t\t\t\t<li>Uppercase and lowercase letters</li>\n\t\t\t\t\t<li>At least one symbol</li>\n\t\t\t\t\t<li>At least one number</li>\n\t\t\t\t\t<li>Avoid common words or sequences of letters/numbers</li>\n\t\t\t\t</ul>",
+    "data": {
+      "status": 400
+    }
+  }
+}

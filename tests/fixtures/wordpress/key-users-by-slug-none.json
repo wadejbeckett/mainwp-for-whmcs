@@ -1,0 +1,12 @@
+{
+  "what": "GET /wp-json/wp/v2/users?context=edit&slug=wpcare-k7m2x9 with the key, before the care account exists",
+  "recorded": "2026-11-10T08:29:59Z",
+  "run": "SK-20261110T102948",
+  "wordpress": "7.1.4",
+  "status": 200,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": []
+}

@@ -1,0 +1,129 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: ctype, curl, filter, hash, json, mbstring
+          coverage: none
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Install dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Unit tests
+        run: vendor/bin/phpunit --testsuite unit
+
+      - name: PHPStan
+        run: vendor/bin/phpstan analyse --no-progress
+
+  integration:
+    name: Integration, PHP ${{ matrix.php }}, MariaDB
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.2', '8.3', '8.4']
+    services:
+      mariadb:
+        image: mariadb:11
+        env:
+          MARIADB_ROOT_PASSWORD: ci-only-root
+          MARIADB_DATABASE: mainwp_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: ctype, curl, filter, hash, json, mbstring, pdo_mysql
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Integration tests
+        env:
+          MAINWP_TEST_DB_HOST: 127.0.0.1
+          MAINWP_TEST_DB_PORT: '3306'
+          MAINWP_TEST_DB_NAME: mainwp_test
+          MAINWP_TEST_DB_USER: root
+          MAINWP_TEST_DB_PASSWORD: ci-only-root
+        run: vendor/bin/phpunit --testsuite integration
+
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ShellCheck tools/release.sh
+        run: shellcheck tools/release.sh
+
+  release:
+    name: Release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [test, integration, shellcheck]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Build the zip
+        run: tools/release.sh "${GITHUB_REF_NAME#v}" dist
+
+      - name: Attach the zip and its checksum to a GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          # The same zip under a fixed name, so that releases/latest/download/mainwp-for-whmcs.zip is always the newest.
+          cp "dist/mainwp-for-whmcs-$version.zip" dist/mainwp-for-whmcs.zip
+          (cd dist && sha256sum mainwp-for-whmcs.zip > mainwp-for-whmcs.zip.sha256)
+          gh release create "$GITHUB_REF_NAME" \
+            "dist/mainwp-for-whmcs-$version.zip" \
+            "dist/mainwp-for-whmcs-$version.zip.sha256" \
+            dist/mainwp-for-whmcs.zip \
+            dist/mainwp-for-whmcs.zip.sha256 \
+            --title "MainWP for WHMCS $version" \
+            --notes "See CHANGELOG.md for what changed in $version." \
+            --verify-tag

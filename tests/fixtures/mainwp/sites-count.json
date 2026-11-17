@@ -1,0 +1,10 @@
+{
+  "what": "GET sites/count, one site",
+  "recorded": "2026-11-09T15:55:14Z",
+  "run": "D-20261109T175513",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "count": 1
+  }
+}

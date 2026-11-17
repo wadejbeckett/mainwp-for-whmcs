@@ -1,0 +1,17 @@
+{
+  "what": "POST sites/add as owner straight after a staging site was removed",
+  "recorded": "2026-11-10T10:25:41Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "data": {
+      "id": "6",
+      "name": "Bench client site",
+      "url": "https://mainwp-bench-site.test/",
+      "client_id": "1"
+    },
+    "message": "Site successfully added - Visit the Site&#039;s Dashboard now."
+  }
+}

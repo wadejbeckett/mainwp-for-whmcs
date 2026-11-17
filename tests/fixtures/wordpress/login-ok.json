@@ -1,0 +1,18 @@
+{
+  "what": "POST /wp-login.php with log, pwd (right), redirect_to=<site>/wp-admin/, testcookie=1 and the test cookie: 302 with the auth and logged-in cookies",
+  "recorded": "2026-11-10T07:15:08Z",
+  "run": "S-20261110T091455",
+  "wordpress": "7.1.4",
+  "status": 302,
+  "headers": {
+    "Location": "https://mainwp-bench-site.test/wp-admin/",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Set-Cookie": [
+      "wordpress_test_cookie=[bench]; path=/; secure; HttpOnly",
+      "wordpress_sec_c01618f55158f53ea7bf1fa8c15b67d7=[bench]; path=/wp-content/plugins; secure; HttpOnly",
+      "wordpress_sec_c01618f55158f53ea7bf1fa8c15b67d7=[bench]; path=/wp-admin; secure; HttpOnly",
+      "wordpress_logged_in_c01618f55158f53ea7bf1fa8c15b67d7=[bench]; path=/; secure; HttpOnly"
+    ]
+  },
+  "body": ""
+}

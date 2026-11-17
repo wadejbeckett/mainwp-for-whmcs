@@ -1,0 +1,12 @@
+{
+  "what": "GET users?websites={id}&roles=administrator, the site disconnected (care account deleted)",
+  "recorded": "2026-11-11T13:23:09Z",
+  "run": "C-20261111T152142",
+  "mainwp": "6.4.2.1",
+  "status": 500,
+  "body": {
+    "code": "no_website_found",
+    "message": "No website found.",
+    "data": null
+  }
+}

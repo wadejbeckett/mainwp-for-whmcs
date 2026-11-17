@@ -1,0 +1,29 @@
+{
+  "name": "noiz/mainwp-for-whmcs",
+  "description": "MainWP for WHMCS: puts each paying client's WordPress site on a MainWP dashboard through MainWP's REST API and keeps it in step with WHMCS billing.",
+  "type": "project",
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/wadejbeckett/mainwp-for-whmcs",
+  "support": {
+    "issues": "https://github.com/wadejbeckett/mainwp-for-whmcs/issues",
+    "source": "https://github.com/wadejbeckett/mainwp-for-whmcs"
+  },
+  "require": {
+    "php": ">=8.2",
+    "ext-ctype": "*",
+    "ext-curl": "*",
+    "ext-filter": "*",
+    "ext-hash": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "illuminate/database": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+    "phpstan/phpstan": "^1.11",
+    "phpunit/phpunit": "^10.5 || ^11.0",
+    "smarty/smarty": "^4.5"
+  },
+  "autoload-dev": { "psr-4": { "MainWpForWhmcs\\Tests\\": "tests/" } },
+  "scripts": { "test": "phpunit", "stan": "phpstan analyse --no-progress" },
+  "config": { "sort-packages": true, "platform": { "php": "8.2.0" } }
+}

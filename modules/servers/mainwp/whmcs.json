@@ -1,0 +1,30 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-servers",
+    "name": "mainwp",
+    "license": "AGPL-3.0-or-later",
+    "category": "provisioning",
+    "description": {
+        "name": "MainWP for WHMCS",
+        "tagline": "Provision, suspend, resume and remove care for WordPress sites on your MainWP dashboard from WHMCS.",
+        "long": "Choose this module on your care product add-on's Module Settings (Addon Type: Independent Product). WHMCS then calls it to create, suspend, unsuspend and terminate care, and it acts on your MainWP dashboard through MainWP's REST API. No server record is needed. It needs the MainWP for WHMCS add-on module, which holds the settings, the pages and the daily check.",
+        "features": [
+            "Care is set up when the add-on's invoice is paid",
+            "Overdue care is suspended on the dashboard and resumed on payment",
+            "Ended care removes the site from the dashboard",
+            "A command the dashboard cannot answer waits in WHMCS's Module Queue"
+        ]
+    },
+    "support": {
+        "homepage": "https://github.com/wadejbeckett/mainwp-for-whmcs",
+        "learn_more": "https://github.com/wadejbeckett/mainwp-for-whmcs#readme",
+        "support_url": "https://github.com/wadejbeckett/mainwp-for-whmcs/issues",
+        "docs_url": "https://github.com/wadejbeckett/mainwp-for-whmcs/blob/main/docs/reference.md"
+    },
+    "authors": [
+        {
+            "name": "Noiz",
+            "homepage": "https://github.com/wadejbeckett/mainwp-for-whmcs"
+        }
+    ]
+}

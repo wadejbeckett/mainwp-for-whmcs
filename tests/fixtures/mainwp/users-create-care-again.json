@@ -1,0 +1,32 @@
+{
+  "what": "POST users/create with the deleted care account's login and a new password",
+  "recorded": "2026-11-11T13:23:29Z",
+  "run": "C-20261111T152142",
+  "mainwp": "6.4.2.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "message": "User created successfully on all 1 website(s).",
+    "data": {
+      "user_info": {
+        "user_pass": "[removed: 24 characters]",
+        "user_email": "wordpress@bench.test",
+        "user_login": "wpcareetec6urx",
+        "user_url": "",
+        "first_name": "WordPress",
+        "last_name": "Care",
+        "role": "administrator"
+      },
+      "total_sites": 1,
+      "total_success": 1,
+      "total_failed": 0,
+      "created_sites": {
+        "1": {
+          "url": "https://mainwp-bench-site.test/",
+          "message": "User created successfully."
+        }
+      },
+      "failed_sites": []
+    }
+  }
+}

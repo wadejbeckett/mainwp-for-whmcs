@@ -1,0 +1,12 @@
+{
+  "what": "POST sites/{id}/reconnect, MainWP Child deactivated on the site",
+  "recorded": "2026-11-10T10:24:08Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 500,
+  "body": {
+    "code": "mainwp_rest_reconnect_site_error",
+    "message": "Reconnect Site &quot;1&quot; error:: MainWP Child plugin not detected or could not be reached! Ensure the MainWP Child plugin is installed and activated on the child site, and there are no security rules blocking requests.  If you continue experiencing this issue, check the MainWP Community for help.",
+    "data": null
+  }
+}

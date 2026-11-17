@@ -1,0 +1,17 @@
+{
+  "what": "DELETE sites/{id}/remove, the connecting administrator deleted on the site",
+  "recorded": "2026-11-10T10:25:03Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 0,
+    "error": "Unexisting administrator user. Please verify that it is an existing administrator.",
+    "data": {
+      "id": "4",
+      "name": "Bench client site",
+      "url": "https://mainwp-bench-site.test/",
+      "client_id": "1"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "what": "GET sites/{id}, the site flagged as staging in the dashboard's database (is_staging=1)",
+  "recorded": "2026-11-10T10:25:37Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "data": {
+      "id": 5,
+      "url": "https://mainwp-bench-site.test/",
+      "name": "Bench client site",
+      "status": "connected",
+      "client_id": 1,
+      "admin_username": "owner",
+      "wp_version": "7.1.4",
+      "php_version": "8.3.36",
+      "child_version": "6.4.1",
+      "last_sync": "2026-11-10T10:25:34+00:00",
+      "notes": ""
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "what": "The same DELETE again, the care account already gone",
+  "recorded": "2026-11-10T08:30:06Z",
+  "run": "SK-20261110T102948",
+  "wordpress": "7.1.4",
+  "status": 404,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "code": "rest_user_invalid_id",
+    "message": "Invalid user ID.",
+    "data": {
+      "status": 404
+    }
+  }
+}

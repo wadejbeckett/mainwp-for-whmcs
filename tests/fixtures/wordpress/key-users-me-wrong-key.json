@@ -1,0 +1,18 @@
+{
+  "what": "GET /wp-json/wp/v2/users/me?context=edit with Basic owner and a wrong key (24 random letters and digits) while the real key exists",
+  "recorded": "2026-11-10T08:29:59Z",
+  "run": "SK-20261110T102948",
+  "wordpress": "7.1.4",
+  "status": 401,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "application/json; charset=UTF-8"
+  },
+  "body": {
+    "code": "rest_not_logged_in",
+    "message": "You are not currently logged in.",
+    "data": {
+      "status": 401
+    }
+  }
+}

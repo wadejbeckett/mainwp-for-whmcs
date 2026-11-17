@@ -1,0 +1,17 @@
+{
+  "what": "DELETE sites/{id}/remove",
+  "recorded": "2026-11-09T15:55:16Z",
+  "run": "D-20261109T175513",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "message": "The site has been removed and the MainWP Child plugin has been disabled.",
+    "data": {
+      "id": "1",
+      "name": "Bench client site",
+      "url": "https://mainwp-bench-site.test/",
+      "client_id": "1"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "what": "GET clients on a dashboard with no client",
+  "recorded": "2026-11-09T15:55:04Z",
+  "run": "D-20261109T175504",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "total": 0,
+    "data": []
+  }
+}

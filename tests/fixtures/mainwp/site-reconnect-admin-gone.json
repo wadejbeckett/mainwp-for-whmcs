@@ -1,0 +1,12 @@
+{
+  "what": "POST sites/{id}/reconnect with the connecting administrator deleted",
+  "recorded": "2026-11-10T10:24:38Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 500,
+  "body": {
+    "code": "mainwp_rest_reconnect_site_error",
+    "message": "Reconnect Site &quot;2&quot; error:: Failed to reconnect to the site. Please remove the site and add it again.        \n                        Dashboard outbound IP (allowlist this): Unavailable. Check Info → Server for Public Dashboard IP, or ask your host.\n            User-Agent MainWP sends: Mozilla/5.0 (compatible; MainWP/6.4.1; +http://mainwp.com)\n                            Cloudflare/proxy edge IP (do not allowlist this as the Dashboard IP): 172.20.0.4\n                        Child / HTTP response\n            Status: 200 (OK)\n\nHeaders:\nHTTP/1.1 200 OK\nserver: Apache/2.4.69 (Debian)\ncontent-type: text/html; charset=UTF-8\n\nBody: the site returned a MainWP error response. Follow the specific error message to complete the connection.\n                            If the child site is behind Cloudflare or another WAF, allow this User-Agent there. Then reinstall or reactivate MainWP Child only if that does not resolve it.",
+    "data": null
+  }
+}

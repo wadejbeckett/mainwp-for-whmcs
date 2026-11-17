@@ -1,0 +1,33 @@
+{
+  "what": "GET clients with one client",
+  "recorded": "2026-11-09T15:55:05Z",
+  "run": "D-20261109T175504",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "total": 1,
+    "data": [
+      {
+        "id": "1",
+        "name": "Demo Client",
+        "address_1": "",
+        "address_2": "",
+        "city": "",
+        "zip": "",
+        "state": "",
+        "country": "",
+        "note": "WHMCS client 540",
+        "client_email": "demo-client@example.com",
+        "client_phone": "",
+        "client_facebook": "",
+        "client_twitter": "",
+        "client_instagram": "",
+        "client_linkedin": "",
+        "created": "2026-11-09T15:55:05",
+        "suspended": "0",
+        "primary_contact_id": "0"
+      }
+    ]
+  }
+}

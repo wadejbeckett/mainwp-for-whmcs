@@ -1,0 +1,12 @@
+{
+  "what": "POST sites/add as owner (right password) while the dashboard still holds the site whose administrator is gone",
+  "recorded": "2026-11-10T10:24:39Z",
+  "run": "R-20261110T122346",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 0,
+    "error": "The site is already connected to your MainWP Dashboard",
+    "found_id": "2"
+  }
+}

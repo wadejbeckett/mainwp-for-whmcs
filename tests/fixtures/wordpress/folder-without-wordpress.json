@@ -1,0 +1,9 @@
+{
+  "what": "Made by hand, not recorded on the bench: GET /nothing-here/ on a site whose folder holds no WordPress of its own (a real case, 13 November 2026): WordPress answers the path itself with its 404 page and the Link header naming the main site's REST root",
+  "status": 404,
+  "headers": {
+    "Link": "<https://mainwp-bench-site.test/wp-json/>; rel=\"https://api.w.org/\"",
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "body": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head><title>Page not found &#8211; Bench client site</title></head>\n<body class=\"error404\"><h1>Page not found</h1></body>\n</html>\n"
+}

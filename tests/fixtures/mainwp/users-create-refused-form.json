@@ -1,0 +1,12 @@
+{
+  "what": "POST users/create form-encoded instead of JSON",
+  "recorded": "2026-11-11T13:24:40Z",
+  "run": "C-20261111T152142",
+  "mainwp": "6.4.2.1",
+  "status": 500,
+  "body": {
+    "code": "invalid_content_type",
+    "message": "Invalid content type. Expected application/json.",
+    "data": null
+  }
+}

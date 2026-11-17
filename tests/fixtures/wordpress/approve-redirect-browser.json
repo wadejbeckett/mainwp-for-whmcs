@@ -1,0 +1,11 @@
+{
+  "what": "The approval in headless Chromium with JavaScript (browser-approve.py): the page itself POSTs /wp/v2/users/me/application-passwords (status kept here: that call's answer) and then sets window.location; there is no HTTP redirect. Location is the URL the browser navigated to, exactly as sent, with the password (groups of four separated by spaces, spaces encoded as '%20') replaced by Benc hKey 0123 4567 89AB CDEF in that same encoding. Query fields in order: m, mainwp_return, site_url, user_login, password",
+  "recorded": "2026-11-10T08:29:59Z",
+  "run": "SK-20261110T102948",
+  "wordpress": "7.1.4",
+  "status": 201,
+  "headers": {
+    "Location": "https://whmcs.bench.test/index.php?m=mainwp&mainwp_return=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef&site_url=https%3A%2F%2Fmainwp-bench-site.test&user_login=owner&password=Benc%20hKey%200123%204567%2089AB%20CDEF"
+  },
+  "body": ""
+}

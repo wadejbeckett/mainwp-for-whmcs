@@ -1,0 +1,24 @@
+{
+  "what": "GET clients/{id}",
+  "recorded": "2026-11-09T15:55:05Z",
+  "run": "D-20261109T175504",
+  "mainwp": "6.4.1",
+  "status": 200,
+  "body": {
+    "success": 1,
+    "data": {
+      "id": "1",
+      "name": "Demo Client",
+      "address_1": "",
+      "address_2": "",
+      "city": "",
+      "zip": "",
+      "state": "",
+      "country": "",
+      "client_email": "demo-client@example.com",
+      "client_phone": "",
+      "created": "2026-11-09T15:55:05",
+      "suspended": "0"
+    }
+  }
+}
